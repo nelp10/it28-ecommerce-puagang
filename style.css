@@ -5,13 +5,13 @@
 }
 
 body {
-    background-image: linear-gradient(to right, lightblue, #666262);
+    background-image: linear-gradient(to right, rgb(144, 230, 194), #5dac4a);
 }
 
 .container {
     width: auto;
     height: 100px;
-    background-image: linear-gradient(to bottom, lightseagreen, lightblue);
+    background-image: linear-gradient(to bottom,  rgb(144, 230, 194), #5dac4a);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,15 +32,7 @@ body {
 
 }
 
-@keyframes move {
-    from {
-        margin-top: 100%;
-    }
-
-    to {
-        margin-bottom: 0;
-    }
-}
+@
 
 
 .container__menu {
@@ -80,30 +72,3 @@ body {
     color: red;
 }
 
-@keyframes fold {
-    from {
-        transform: skew(10deg);
-        color: green;
-        background-color: #000;
-    }
-
-    to {
-        transform: skew(160deg);
-    }
-}
-
-@media (max-width: 618px) {
-    .container__menu {
-        display: none;
-    }
-
-    .menubtn {
-        display: block;
-    }
-}
-@media (min-width: 620px) {
-
-    .menubtn {
-        display: none;
-    }
-}
